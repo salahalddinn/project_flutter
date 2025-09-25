@@ -42,14 +42,22 @@ class screan1 extends StatelessWidget {
               ),
               child: Column(
                 children: [
-                  TextFormField(
-                    decoration: InputDecoration(
-                      labelText: "Enter the frist name ",
-                      hintText: "ادخل الاسم الاول ",
-                      prefixIcon: Icon(Icons.drive_file_rename_outline,size: 40,color: Colors.white,),
-                      suffixIcon: Icon(Icons.man,size: 40,color: Colors.white,),
+                  SizedBox(height: 20,),
+                  Container(
+                    margin: EdgeInsets.all(10),
+                    color: Colors.black12,
+                    child: TextFormField(
+                      decoration: InputDecoration(
+                        labelText: "Enter the frist name ",
+                        hintText: "ادخل الاسم الاول ",
+                        prefixIcon: Icon(Icons.drive_file_rename_outline,size: 40,color: Colors.white,),
+                        suffixIcon: Icon(Icons.man,size: 40,color: Colors.white,),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(15),
 
+                    )
 
+                      ),
                     ),
                   )
 
