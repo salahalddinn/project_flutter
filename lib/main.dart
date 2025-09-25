@@ -42,7 +42,13 @@ class screan1 extends StatelessWidget {
               ),
               child: Column(
                 children: [
-                  TextFormField()
+                  TextFormField(
+                    decoration: InputDecoration(
+                      labelText: "Enter the frist name ",
+                      hintText: "ادخل الاسم الاول ",
+
+                    ),
+                  )
 
                 ],
               ),
