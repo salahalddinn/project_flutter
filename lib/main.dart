@@ -20,6 +20,7 @@ class screan1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
         backgroundColor: Colors.black12,
         title: Text("صفحة التشفير ",style: TextStyle(color: Colors.black,fontSize: 40),),
       ),
