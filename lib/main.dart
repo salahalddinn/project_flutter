@@ -7,6 +7,19 @@ class salah extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp(
+      home: screan1(),
+    );
   }
 }
+class screan1 extends StatelessWidget {
+  const screan1({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(),
+    );
+  }
+}
+
