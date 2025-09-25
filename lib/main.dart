@@ -30,7 +30,11 @@ class screan1 extends StatelessWidget {
       ),
       body: Column(
         children: [
-
+          Container(
+            width: double.infinity,
+            height: 300,
+            color: Colors.blueGrey,
+          ),
         ],
       ),
     );
