@@ -64,7 +64,9 @@ class screan1 extends StatelessWidget {
                     ),
                   ),
                   SizedBox(height: 20,),
+               TextFormField(
 
+               ),
                 ],
               ),
             ),
