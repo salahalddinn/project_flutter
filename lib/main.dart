@@ -24,6 +24,9 @@ class screan1 extends StatelessWidget {
         backgroundColor: Colors.black12,
         title: Text("صفحة التشفير ",style: TextStyle(color: Colors.black,fontSize: 40),),
       leading: Icon(Icons.account_circle_rounded,size: 40,color: Colors.black,),
+        actions: [
+          Icon(Icons.no_encryption_gmailerrorred,size: 40,color: Colors.black,),
+        ],
       ),
       
     );
