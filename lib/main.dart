@@ -31,11 +31,13 @@ class screan1 extends StatelessWidget {
       body: Column(
         children: [
           Container(
+            margin: EdgeInsets.all(10),
             width: double.infinity,
             height: 500,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(20),
               color: Colors.blueGrey,
+              border: Border.all(color: Colors.cyan),
             ),
             child: Column(
               children: [
