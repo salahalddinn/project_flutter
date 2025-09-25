@@ -32,8 +32,16 @@ class screan1 extends StatelessWidget {
         children: [
           Container(
             width: double.infinity,
-            height: 300,
-            color: Colors.blueGrey,
+            height: 500,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(20),
+              color: Colors.blueGrey,
+            ),
+            child: Column(
+              children: [
+
+              ],
+            ),
           ),
         ],
       ),
