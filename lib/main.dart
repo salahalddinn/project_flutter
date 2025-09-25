@@ -28,24 +28,27 @@ class screan1 extends StatelessWidget {
           Icon(Icons.no_encryption_gmailerrorred,size: 40,color: Colors.black,),
         ],
       ),
-      body: Column(
-        children: [
-          Container(
-            margin: EdgeInsets.all(10),
-            width: double.infinity,
-            height: 500,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(20),
-              color: Colors.blueGrey,
-              border: Border.all(color: Colors.cyan),
-            ),
-            child: Column(
-              children: [
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Container(
+              margin: EdgeInsets.all(15),
+              width: double.infinity,
+              height: 550,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(20),
+                color: Colors.blueGrey,
+                border: Border.all(color: Colors.cyan),
+              ),
+              child: Column(
+                children: [
+                  TextFormField()
 
-              ],
+                ],
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
