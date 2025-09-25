@@ -46,6 +46,7 @@ class screan1 extends StatelessWidget {
                     decoration: InputDecoration(
                       labelText: "Enter the frist name ",
                       hintText: "ادخل الاسم الاول ",
+                      prefixIcon: Icon(Icons.drive_file_rename_outline,size: 40,color: Colors.white,)
 
                     ),
                   )
