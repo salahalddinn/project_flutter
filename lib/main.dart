@@ -28,7 +28,11 @@ class screan1 extends StatelessWidget {
           Icon(Icons.no_encryption_gmailerrorred,size: 40,color: Colors.black,),
         ],
       ),
-      
+      body: Column(
+        children: [
+
+        ],
+      ),
     );
   }
 }
