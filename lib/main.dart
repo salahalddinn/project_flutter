@@ -42,11 +42,14 @@ class screan1 extends StatelessWidget {
               ),
               child: Column(
                 children: [
-                  Row(
-                    textDirection: TextDirection.rtl,
-                    children: [
-                      Text("البيانات المراد تشفيرها ",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 30),),
-                    ],
+                  Container(
+
+                    child: Row(
+                      textDirection: TextDirection.rtl,
+                      children: [
+                        Text("البيانات المراد تشفيرها ",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 30),),
+                      ],
+                    ),
                   ),
                   SizedBox(height: 20,),
                   Container(
