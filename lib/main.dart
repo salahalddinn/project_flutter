@@ -42,6 +42,12 @@ class screan1 extends StatelessWidget {
               ),
               child: Column(
                 children: [
+                  Row(
+                    textDirection: TextDirection.rtl,
+                    children: [
+                      Text("البيانات المراد تشفيرها ",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 30),),
+                    ],
+                  ),
                   SizedBox(height: 20,),
                   Container(
                     margin: EdgeInsets.all(4),
@@ -115,7 +121,7 @@ class screan1 extends StatelessWidget {
                       ),
                     ),
                   ),
-                  SizedBox(height: 10,),
+                  SizedBox(height: 20,),
                   Container(
 
                     decoration: BoxDecoration(
@@ -126,6 +132,7 @@ class screan1 extends StatelessWidget {
 
                       child: MaterialButton(
                         splashColor: Colors.blue,
+
                         onPressed: (){},child: Text("اضغط للتشفير ",style:TextStyle(color: Colors.black,fontSize: 30,fontWeight: FontWeight.bold),),))
                 ],
               ),
