@@ -8,6 +8,8 @@ class screan_salah extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
+        elevation: 40,
+        title: Text("الصفحه الثانيه تبع التشفير ",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 30),),
       ),
     );
   }
