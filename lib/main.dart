@@ -113,16 +113,19 @@ class screan1 extends StatelessWidget {
                       ),
                     ),
                   ),
-               TextFormField(
-                 decoration: InputDecoration(
-                   prefixIcon: Icon(Icons.phone_android_outlined,size: 40,color: Colors.blueGrey,),
-                   suffixIcon: Icon(Icons.man,size: 40,color: Colors.blueGrey,),
-                   labelText: "Enter the anther phone",
-                   hintText: "ادخل رقم ثاني ان وجود",
+               Container(
+
+                 child: TextFormField(
+                   decoration: InputDecoration(
+                     prefixIcon: Icon(Icons.phone_android_outlined,size: 40,color: Colors.blueGrey,),
+                     suffixIcon: Icon(Icons.man,size: 40,color: Colors.blueGrey,),
+                     labelText: "Enter the anther phone",
+                     hintText: "ادخل رقم ثاني ان وجود",
 border: OutlineInputBorder(
   borderRadius: BorderRadius.circular(16),
 
 )
+                   ),
                  ),
                ),
                 ],
