@@ -90,15 +90,27 @@ class screan1 extends StatelessWidget {
                  ),
                ),
                   SizedBox(height: 10,),
-                  TextFormField(
-                    decoration: InputDecoration(
-                      prefixIcon: Icon(Icons.phone,size: 40,color: Colors.blueGrey,),
-                      suffixIcon: Icon(Icons.confirmation_num_rounded,size: 40,color: Colors.blueGrey,),
-                      labelText: "Enter the number frist",
-                      hintText: "ادخل الرقم الاول ",
-                      border: OutlineInputBorder(
+                  Container(
+                    margin: EdgeInsets.all(4),
+                    width: double.infinity,
+                    decoration: BoxDecoration(
+                      color: Colors.white60,
+                      borderRadius: BorderRadius.circular(16),
+                      border: Border.all(color: Colors.white,width: 4),
 
-                      )
+                    ),
+                    child: TextFormField(
+                      decoration: InputDecoration(
+                        prefixIcon: Icon(Icons.phone,size: 40,color: Colors.blueGrey,),
+                        suffixIcon: Icon(Icons.confirmation_num_rounded,size: 40,color: Colors.blueGrey,),
+                        labelText: "Enter the number frist",
+                        hintText: "ادخل الرقم الاول ",
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(16),
+
+
+                        )
+                      ),
                     ),
                   ),
                 ],
