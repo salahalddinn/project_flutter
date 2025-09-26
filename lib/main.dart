@@ -42,7 +42,7 @@ class screan1 extends StatelessWidget {
               ),
               child: Column(
                 children: [
-                  SizedBox(height: 20,),
+                  SizedBox(height: 15,),
                   Container(
                     margin: EdgeInsets.all(4),
                     decoration: BoxDecoration(
@@ -64,7 +64,7 @@ class screan1 extends StatelessWidget {
                       ),
                     ),
                   ),
-                  SizedBox(height: 20,),
+                  SizedBox(height: 15,),
                Container(
               margin: EdgeInsets.all(4),
                  width: double.infinity,
@@ -89,7 +89,7 @@ class screan1 extends StatelessWidget {
 
                  ),
                ),
-                  SizedBox(height: 10,),
+                  SizedBox(height: 15,),
                   Container(
                     margin: EdgeInsets.all(4),
                     width: double.infinity,
@@ -113,6 +113,7 @@ class screan1 extends StatelessWidget {
                       ),
                     ),
                   ),
+               TextFormField(),
                 ],
               ),
             ),
