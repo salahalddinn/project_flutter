@@ -90,7 +90,11 @@ class screan1 extends StatelessWidget {
                  ),
                ),
                   SizedBox(height: 10,),
-                  TextFormField()
+                  TextFormField(
+                    decoration: InputDecoration(
+                      prefixIcon: Icon(Icons.phone,size: 40,color: Colors.blueGrey,),
+                    ),
+                  ),
                 ],
               ),
             ),
