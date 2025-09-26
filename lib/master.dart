@@ -19,15 +19,21 @@ class master extends StatelessWidget {
         ],
       ),
       body: Container(
+        margin: EdgeInsets.all(6),
         width: double.infinity,
         height: 600,
-        color: Colors.black87,
+        decoration: BoxDecoration(
+          color: Colors.black87,
+          borderRadius: BorderRadius.circular(15),
+
+        ),
         child: Column(
 
           children: [
+            SizedBox(height: 20,),
             CircleAvatar(
-              radius: 70,
-              backgroundColor: Colors.blueGrey,
+              radius: 60,
+              backgroundColor: Colors.white60,
             )
           ],
         ),
