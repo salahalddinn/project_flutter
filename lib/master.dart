@@ -8,8 +8,15 @@ class master extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-      backgroundColor: Colors.black26,
-      title: Text("الصفحه الرئيسه للتشفير ",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 30),),
+      backgroundColor: Colors.black87,
+      title: Text("الصفحه الرئيسه للتشفير ",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 30),),
+        actions: [
+          CircleAvatar(
+            backgroundColor: Colors.white,
+            radius: 24,
+            child: Icon(Icons.man,size: 50,color: Colors.black,),
+          )
+        ],
       ),
     );
   }
