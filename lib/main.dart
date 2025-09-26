@@ -119,7 +119,10 @@ class screan1 extends StatelessWidget {
                    suffixIcon: Icon(Icons.man,size: 40,color: Colors.blueGrey,),
                    labelText: "Enter the anther phone",
                    hintText: "ادخل رقم ثاني ان وجود",
+border: OutlineInputBorder(
+  borderRadius: BorderRadius.circular(16),
 
+)
                  ),
                ),
                 ],
