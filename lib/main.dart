@@ -38,14 +38,14 @@ class screan1 extends StatelessWidget {
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20),
                 color: Colors.blueGrey,
-                border: Border.all(color: Colors.cyan),
+                border: Border.all(color: Colors.black,width: 4),
               ),
               child: Column(
                 children: [
                   CircleAvatar(
-                    backgroundColor: Colors.black12,
+                    backgroundColor: Colors.white60,
                     radius: 30,
-                    child: Icon(Icons.no_encryption_gmailerrorred_rounded,size: 50,color: Colors.teal,),
+                    child: Icon(Icons.no_encryption_gmailerrorred_rounded,size: 50,color: Colors.blueGrey,),
                   ),
                  Container(
 
@@ -140,11 +140,13 @@ class screan1 extends StatelessWidget {
                   ),
                   SizedBox(height: 20,),
                   Container(
+                    margin: EdgeInsets.all(5),
+                    width: double.infinity,
 
                     decoration: BoxDecoration(
                       color: Colors.white60,
                   borderRadius: BorderRadius.circular(20),
-                      border: Border.all(color: Colors.white,width: 4),
+                      border: Border.all(color: Colors.black,width: 3),
                     ),
 
                       child: MaterialButton(
