@@ -57,6 +57,7 @@ class screan1 extends StatelessWidget {
                         prefixIcon: Icon(Icons.drive_file_rename_outline,size: 40,color: Colors.blueGrey,),
                         suffixIcon: Icon(Icons.man,size: 40,color: Colors.blueGrey,),
                     border: OutlineInputBorder(
+                    
                       borderRadius: BorderRadius.circular(15),
 
                     )
@@ -113,6 +114,8 @@ class screan1 extends StatelessWidget {
                       ),
                     ),
                   ),
+                  SizedBox(height: 10,),
+                  MaterialButton(onPressed: (){},child: Text("اضغط للتشفير ",style:TextStyle(color: Colors.blueGrey,fontSize: 30,fontWeight: FontWeight.bold),),)
                 ],
               ),
             ),
