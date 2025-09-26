@@ -142,7 +142,7 @@ border: OutlineInputBorder(
 
                   onPressed: (){
                     
-                    Navigator.push(context, MaterialPageRoute(builder: (context)=>screan_salah()))
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>screan_salah()));
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.black,
