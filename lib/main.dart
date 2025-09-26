@@ -137,6 +137,7 @@ border: OutlineInputBorder(
                  ),
                ),
                   SizedBox(height: 15,),
+              ElevatedButton(onPressed: (){}, child: Text("Encryption Data",style: TextStyle(color: Colors.teal,fontSize: 30,fontWeight: FontWeight.bold),)),
 
                 ],
               ),
