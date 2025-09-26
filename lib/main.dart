@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project_git/home.dart';
 import 'package:project_git/salah.dart';
 void main(){
   runApp(salah());
@@ -10,7 +11,7 @@ class salah extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: screan1(),
+      home: home(),
     );
   }
 }
