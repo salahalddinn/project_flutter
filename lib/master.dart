@@ -18,6 +18,20 @@ class master extends StatelessWidget {
           )
         ],
       ),
+      body: Container(
+        width: double.infinity,
+        height: 600,
+        color: Colors.black87,
+        child: Column(
+
+          children: [
+            CircleAvatar(
+              radius: 70,
+              backgroundColor: Colors.blueGrey,
+            )
+          ],
+        ),
+      ),
     );
   }
 }
