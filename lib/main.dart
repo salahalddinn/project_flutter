@@ -96,6 +96,9 @@ class screan1 extends StatelessWidget {
                       suffixIcon: Icon(Icons.confirmation_num_rounded,size: 40,color: Colors.blueGrey,),
                       labelText: "Enter the number frist",
                       hintText: "ادخل الرقم الاول ",
+                      border: OutlineInputBorder(
+
+                      )
                     ),
                   ),
                 ],
