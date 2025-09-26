@@ -394,9 +394,10 @@ class m extends StatelessWidget {
         child: Column(
           children: [
             Container(
-              margin: EdgeInsets.all(15),
+              margin: EdgeInsets.all(8),
+
               width: double.infinity,
-              height: 550,
+              height: 570,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20),
                 color: Colors.blueGrey,
@@ -532,21 +533,31 @@ class m extends StatelessWidget {
                     ),
                   ),
                   SizedBox(height: 15,),
-                  ElevatedButton(
+                  Container(
+                   margin: EdgeInsets.all(10),
+                    height: 70,
+                    width: double.infinity,
+                    decoration: BoxDecoration(
+                      color: Colors.blueGrey,
+                      border: Border.all(color: Colors.black,width: 5),
+                      borderRadius: BorderRadius.circular(30),
+                    ),
+                    child: ElevatedButton(
 
-                      onPressed: (){
+                        onPressed: (){
 
-                        Navigator.push(context, MaterialPageRoute(builder: (context)=>screan_salah()));
-                      },
-                      style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.blueGrey,
-                          foregroundColor: Colors.black,
-                          padding: EdgeInsets.symmetric(horizontal: 24,vertical: 14),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(12),
-                          )
-                      ),
-                      child: Text("Encryption Data",style: TextStyle(color: Colors.black,fontSize: 30,fontWeight: FontWeight.bold),)),
+                          Navigator.push(context, MaterialPageRoute(builder: (context)=>screan_salah()));
+                        },
+                        style: ElevatedButton.styleFrom(
+                            backgroundColor: Colors.white,
+                            foregroundColor: Colors.black,
+                            padding: EdgeInsets.symmetric(horizontal: 24,vertical: 14),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(25),
+                            )
+                        ),
+                        child: Text("Encryption Data",style: TextStyle(color: Colors.black,fontSize: 30,fontWeight: FontWeight.bold),)),
+                  ),
 
                 ],
               ),
