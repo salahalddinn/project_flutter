@@ -117,6 +117,9 @@ class screan1 extends StatelessWidget {
                  decoration: InputDecoration(
                    prefixIcon: Icon(Icons.phone_android_outlined,size: 40,color: Colors.blueGrey,),
                    suffixIcon: Icon(Icons.man,size: 40,color: Colors.blueGrey,),
+                   labelText: "Enter the anther phone",
+                   hintText: "ادخل رقم ثاني ان وجود",
+
                  ),
                ),
                 ],
