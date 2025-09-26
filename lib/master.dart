@@ -50,7 +50,12 @@ class master extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
 
-                  Text("النص الناتج من التشفير ",style: TextStyle(color: Colors.white,fontSize: 30,fontWeight: FontWeight.bold),)
+                  Text("النص الناتج من التشفير ",style: TextStyle(color: Colors.white,fontSize: 30,fontWeight: FontWeight.bold),),
+                  CircleAvatar(
+                    backgroundColor: Colors.white,
+                    radius: 35,
+                    child: Icon(Icons.enhanced_encryption_rounded,size: 40,color: Colors.red,),
+                  ),
                 ],
               ),
             )
