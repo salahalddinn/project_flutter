@@ -34,7 +34,9 @@ class master extends StatelessWidget {
             CircleAvatar(
               radius: 60,
               backgroundColor: Colors.white60,
-              child: Icon(Icons.key,size: 80,color: Colors.black,),
+              child: Stack(children:[
+                Icon(Icons.enhanced_encryption_rounded,size: 50,color: Colors.red,),
+                Icon(Icons.key,size: 80,color: Colors.black,)]),
             ),
             SizedBox(height: 20,),
             Container(
