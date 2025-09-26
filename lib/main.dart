@@ -137,7 +137,16 @@ border: OutlineInputBorder(
                  ),
                ),
                   SizedBox(height: 15,),
-              ElevatedButton(onPressed: (){}, child: Text("Encryption Data",style: TextStyle(color: Colors.teal,fontSize: 30,fontWeight: FontWeight.bold),)),
+              ElevatedButton(onPressed: (){},
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.black,
+                    foregroundColor: Colors.white,
+                    padding: EdgeInsets.symmetric(horizontal: 24,vertical: 14),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12),
+                    )
+                  ),
+                  child: Text("Encryption Data",style: TextStyle(color: Colors.white,fontSize: 30,fontWeight: FontWeight.bold),)),
 
                 ],
               ),
