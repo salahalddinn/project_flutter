@@ -38,8 +38,18 @@ class master extends StatelessWidget {
             ),
             SizedBox(height: 20,),
             Container(
+              width: double.infinity,
+              height: 50,
+              margin: EdgeInsets.all(10),
+              decoration: BoxDecoration(
+                color: Colors.white10,
+                borderRadius: BorderRadius.circular(20),
+                border: Border.all(color: Colors.white,width: 4)
+              ),
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.end,
                 children: [
+
                   Text("النص الناتج من التشفير ",style: TextStyle(color: Colors.white,fontSize: 30,fontWeight: FontWeight.bold),)
                 ],
               ),
