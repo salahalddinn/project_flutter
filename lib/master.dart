@@ -7,7 +7,9 @@ class master extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-
+        centerTitle: true,
+      backgroundColor: Colors.black26,
+      title: Text("الصفحه الرئيسه للتشفير ",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 30),),
       ),
     );
   }
