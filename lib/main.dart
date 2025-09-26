@@ -42,16 +42,30 @@ class screan1 extends StatelessWidget {
               ),
               child: Column(
                 children: [
-                  Container(
-
-                    child: Row(
-                      textDirection: TextDirection.rtl,
-                      children: [
-                        Text("البيانات المراد تشفيرها ",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 30),),
-                      ],
-                    ),
+                  CircleAvatar(
+                    backgroundColor: Colors.black12,
+                    radius: 30,
+                    child: Icon(Icons.no_encryption_gmailerrorred_rounded,size: 50,color: Colors.teal,),
                   ),
-                  SizedBox(height: 20,),
+                 Container(
+
+                   margin: EdgeInsets.all(10),
+                   width: double.infinity,
+                   height: 60,
+                   decoration: BoxDecoration(
+                     color: Colors.white,
+                     borderRadius: BorderRadius.circular(20),
+                     border: Border.all(color: Colors.black,width: 4),
+                   ),
+                   child:  Row(
+                     textDirection: TextDirection.rtl,
+                     children: [
+                       Text("البيانات المراد تشفيرها ",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 30),),
+                     ],
+                   ),
+                 ),
+                  SizedBox(height: 10,),
+
                   Container(
                     margin: EdgeInsets.all(4),
                     decoration: BoxDecoration(
