@@ -93,6 +93,7 @@ class screan1 extends StatelessWidget {
                   TextFormField(
                     decoration: InputDecoration(
                       prefixIcon: Icon(Icons.phone,size: 40,color: Colors.blueGrey,),
+                      suffixIcon: Icon(Icons.confirmation_num_rounded,size: 40,color: Colors.blueGrey,)
                     ),
                   ),
                 ],
