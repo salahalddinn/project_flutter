@@ -114,7 +114,14 @@ class screan1 extends StatelessWidget {
                     ),
                   ),
                Container(
+                 margin: EdgeInsets.all(4),
+                 width: double.infinity,
 
+decoration: BoxDecoration(
+  color: Colors.white60,
+  borderRadius: BorderRadius.circular(16),
+    border: Border.all(color: Colors.white,width: 4),
+),
                  child: TextFormField(
                    decoration: InputDecoration(
                      prefixIcon: Icon(Icons.phone_android_outlined,size: 40,color: Colors.blueGrey,),
