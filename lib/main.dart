@@ -124,7 +124,9 @@ class screan1 extends StatelessWidget {
                       border: Border.all(color: Colors.white,width: 4),
                     ),
 
-                      child: MaterialButton(onPressed: (){},child: Text("اضغط للتشفير ",style:TextStyle(color: Colors.black,fontSize: 30,fontWeight: FontWeight.bold),),))
+                      child: MaterialButton(
+                        splashColor: Colors.blue,
+                        onPressed: (){},child: Text("اضغط للتشفير ",style:TextStyle(color: Colors.black,fontSize: 30,fontWeight: FontWeight.bold),),))
                 ],
               ),
             ),
