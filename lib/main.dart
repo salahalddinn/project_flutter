@@ -44,10 +44,11 @@ class screan1 extends StatelessWidget {
                 children: [
                   SizedBox(height: 20,),
                   Container(
-                    margin: EdgeInsets.all(10),
+                    margin: EdgeInsets.all(4),
                     decoration: BoxDecoration(
                       color: Colors.white60,
                       borderRadius: BorderRadius.circular(20),
+                      border: Border.all(color: Colors.white,width: 4),
                     ),
                     child: TextFormField(
                       decoration: InputDecoration(
@@ -65,8 +66,13 @@ class screan1 extends StatelessWidget {
                   ),
                   SizedBox(height: 20,),
                Container(
-                 color: Colors.white60,
+              margin: EdgeInsets.all(4),
                  width: double.infinity,
+                 decoration: BoxDecoration(
+                   color: Colors.white60,
+                   borderRadius: BorderRadius.circular(16),
+                   border: Border.all(color: Colors.white,width: 4),
+                 ),
 
                  child: TextFormField(
                    decoration: InputDecoration(
