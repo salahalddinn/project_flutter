@@ -64,17 +64,24 @@ class screan1 extends StatelessWidget {
                     ),
                   ),
                   SizedBox(height: 20,),
-               TextFormField(
-                 decoration: InputDecoration(
-                   suffixIcon: Icon(Icons.person,size: 40,color: Colors.black,),
-                   prefixIcon: Icon(Icons.drive_file_rename_outline,size: 40,color: Colors.black,),
-                   labelText: "Enter the last_name",
-                   hintText: "ادخل الاسم الاخير ",
-                   border: OutlineInputBorder(
+               Container(
+                 color: Colors.white60,
+                 width: double.infinity,
 
-                   )
+                 child: TextFormField(
+                   decoration: InputDecoration(
+                     suffixIcon: Icon(Icons.person,size: 40,color: Colors.black,),
+                     prefixIcon: Icon(Icons.drive_file_rename_outline,size: 40,color: Colors.black,),
+                     labelText: "Enter the last_name",
+                     hintText: "ادخل الاسم الاخير ",
+                     border: OutlineInputBorder(
+                       borderRadius: BorderRadius.circular(15),
+
+
+                     )
+                   ),
+
                  ),
-
                ),
                 ],
               ),
