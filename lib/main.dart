@@ -101,6 +101,7 @@ class screan1 extends StatelessWidget {
 
                     ),
                     child: TextFormField(
+                      keyboardType: TextInputType.phone,
                       decoration: InputDecoration(
                         prefixIcon: Icon(Icons.phone,size: 40,color: Colors.blueGrey,),
                         suffixIcon: Icon(Icons.confirmation_num_rounded,size: 40,color: Colors.blueGrey,),
@@ -116,11 +117,14 @@ class screan1 extends StatelessWidget {
                   ),
                   SizedBox(height: 10,),
                   Container(
-                    decoration: BoxDecoration(
 
+                    decoration: BoxDecoration(
+                      color: Colors.white60,
+                  borderRadius: BorderRadius.circular(20),
+                      border: Border.all(color: Colors.white,width: 4),
                     ),
 
-                      child: MaterialButton(onPressed: (){},child: Text("اضغط للتشفير ",style:TextStyle(color: Colors.blueGrey,fontSize: 30,fontWeight: FontWeight.bold),),))
+                      child: MaterialButton(onPressed: (){},child: Text("اضغط للتشفير ",style:TextStyle(color: Colors.black,fontSize: 30,fontWeight: FontWeight.bold),),))
                 ],
               ),
             ),
