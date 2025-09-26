@@ -35,6 +35,14 @@ class master extends StatelessWidget {
               radius: 60,
               backgroundColor: Colors.white60,
               child: Icon(Icons.key,size: 80,color: Colors.black,),
+            ),
+            SizedBox(height: 20,),
+            Container(
+              child: Row(
+                children: [
+                  Text("النص الناتج من التشفير ",style: TextStyle(color: Colors.white,fontSize: 30,fontWeight: FontWeight.bold),)
+                ],
+              ),
             )
           ],
         ),
