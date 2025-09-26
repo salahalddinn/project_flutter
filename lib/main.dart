@@ -113,6 +113,7 @@ class screan1 extends StatelessWidget {
                       ),
                     ),
                   ),
+               SizedBox(height: 15,),
                Container(
                  margin: EdgeInsets.all(4),
                  width: double.infinity,
