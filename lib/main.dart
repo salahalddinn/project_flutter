@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project_git/master.dart';
 void main(){
   runApp(salah());
 }
@@ -152,7 +153,11 @@ class screan1 extends StatelessWidget {
                       child: MaterialButton(
                         splashColor: Colors.blue,
 
-                        onPressed: (){},child: Text("اضغط للتشفير ",style:TextStyle(color: Colors.black,fontSize: 30,fontWeight: FontWeight.bold),),))
+                        onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>master()));
+
+                        },
+
+                        child: Text("اضغط للتشفير ",style:TextStyle(color: Colors.black,fontSize: 30,fontWeight: FontWeight.bold),),))
                 ],
               ),
             ),
