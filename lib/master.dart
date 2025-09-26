@@ -58,6 +58,16 @@ class master extends StatelessWidget {
                   ),
                 ],
               ),
+            ),
+            SizedBox(height: 10,),
+            Container(
+              width: double.infinity,
+              height: 300,
+             margin: EdgeInsets.all(10),
+             decoration: BoxDecoration(
+               color: Colors.white60,
+               borderRadius: BorderRadius.circular(15),
+             ),
             )
           ],
         ),
