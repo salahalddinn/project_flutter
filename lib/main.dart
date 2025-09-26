@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project_git/salah.dart';
 void main(){
   runApp(salah());
 }
@@ -139,7 +140,10 @@ border: OutlineInputBorder(
                   SizedBox(height: 20,),
               ElevatedButton(
 
-                  onPressed: (){},
+                  onPressed: (){
+                    
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>screan_salah()))
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.black,
                     foregroundColor: Colors.white,
