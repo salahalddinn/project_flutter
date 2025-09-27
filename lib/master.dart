@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:crypto/crypto.dart';
-import 'dart:convert';
+
 class master extends StatelessWidget {
    master({Key? key, required this.salah, }) : super(key: key);
   final String salah ;
@@ -70,7 +69,9 @@ class master extends StatelessWidget {
              decoration: BoxDecoration(
                color: Colors.white60,
                borderRadius: BorderRadius.circular(15),
+
              ),
+              child: Text("النص المشفر -$salah"),
             )
           ],
         ),
