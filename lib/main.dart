@@ -4,12 +4,13 @@ import 'package:project_git/master.dart';
 
 import 'package:project_git/home.dart';
 import 'package:project_git/salah.dart';
-
+import 'package:crypto/crypto.dart';
+import 'dart:convert';
 void main(){
   runApp(salah());
 }
 class salah extends StatelessWidget {
-  const salah({Key? key}) : super(key: key);
+   salah({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -218,7 +219,8 @@ class salah extends StatelessWidget {
 //   }
 // }
 class v extends StatelessWidget {
-
+  v({Key? key}) : super(key: key);
+  var frist_name=  TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -281,6 +283,7 @@ class v extends StatelessWidget {
               border: Border.all(color: Colors.white,width: 4),
             ),
             child: TextFormField(
+              controller: frist_name,
               decoration: InputDecoration(
                   labelText: "Enter the frist name ",
                   hintText: "ادخل الاسم الاول ",
