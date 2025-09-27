@@ -1,16 +1,46 @@
-# project_git
+# 🔐 مشروع تشفير (Flutter)
 
-A new Flutter project.
+مشروع **تشفير** هو تطبيق موبايل بسيط باستخدام **Flutter** لتشفير النصوص وفك التشفير.  
+يهدف التطبيق لتوضيح كيفية التعامل مع خوارزميات التشفير بشكل عملي.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 📥 تنزيل المشروع
 
-A few resources to get you started if this is your first Flutter project:
+قم بفتح **Terminal** أو **Git Bash**، ثم نفذ الأوامر التالية:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+```bash
+# انسخ المستودع
+git clone https://github.com/yourusername/tashfeer-flutter.git
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# ادخل إلى مجلد المشروع
+cd tashfeer-flutter
+
+# ثبّت الحزم
+flutter pub get
+#لتشغيله على المحاكي
+flutter run
+#لتشغيله على الويب
+flutter run -d chrome
+
+الاستخدام 
+
+افتح التطبيق.
+أدخل النص الذي تريد تشفيره.
+
+اختر خوارزمية التشفير.
+
+اضغط زر تشفير 🔐.
+لعرض النص الأصلي، اضغط فك التشفير 🔓
+
+           📂 هيكل المشروعtashfeer-flutte
+│-- lib/
+│   │-- main.dart          # نقطة البداية
+│   │-- screens/
+│   │   └── home_screen.dart   # الواجهة الرئيسية
+│   │-- utils/
+│   │   ├── encryption.dart    # دوال التشفير
+│   │   └── decryption.dart    # دوال فك التشفير
+│-- pubspec.yaml          # ملف إعدادات الحزم
+│-- README.md             # هذا الملف
+
