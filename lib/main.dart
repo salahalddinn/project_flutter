@@ -402,7 +402,10 @@ class v extends StatelessWidget {
 }
 class m extends StatelessWidget {
 
-
+  var a1=  TextEditingController();
+  var a2=  TextEditingController();
+  var a3=  TextEditingController();
+  var a4=  TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -464,6 +467,7 @@ class m extends StatelessWidget {
                       border: Border.all(color: Colors.white,width: 4),
                     ),
                     child: TextFormField(
+                      controller: a1,
                       decoration: InputDecoration(
                           labelText: "Enter the frist name ",
                           hintText: "ادخل الاسم الاول ",
@@ -490,6 +494,7 @@ class m extends StatelessWidget {
                     ),
 
                     child: TextFormField(
+                      controller: a2,
                       decoration: InputDecoration(
                           suffixIcon: Icon(Icons.person,size: 40,color: Colors.blueGrey,),
                           prefixIcon: Icon(Icons.drive_file_rename_outline,size: 40,color: Colors.blueGrey,),
@@ -517,6 +522,7 @@ class m extends StatelessWidget {
 
                     ),
                     child: TextFormField(
+                      controller: a3,
                       keyboardType: TextInputType.phone,
                       decoration: InputDecoration(
                           prefixIcon: Icon(Icons.phone,size: 40,color: Colors.blueGrey,),
@@ -545,6 +551,7 @@ class m extends StatelessWidget {
                       border: Border.all(color: Colors.white,width: 4),
                     ),
                     child: TextFormField(
+                      controller: a4,
                       decoration: InputDecoration(
                           prefixIcon: Icon(Icons.phone_android_outlined,size: 40,color: Colors.blueGrey,),
                           suffixIcon: Icon(Icons.man,size: 40,color: Colors.blueGrey,),
@@ -571,7 +578,26 @@ class m extends StatelessWidget {
 
                         onPressed: (){
 
-                          Navigator.push(context, MaterialPageRoute(builder: (context)=>screan_salah()));
+                          var w=utf8.encode(a1.text);
+                          var c1=sha1.convert(w);
+
+                          var c=utf8.encode(a2.text);
+                          var c2=sha1.convert(c);
+
+                          var n=utf8.encode(a3.text);
+                          var c3=sha1.convert(n);
+
+                          var k=utf8.encode(a4.text);
+                          var c4=sha1.convert(k);
+
+                          Navigator.push(context, MaterialPageRoute(builder: (context)=>screan_salah
+                            (
+                            c1: c1.toString(),
+                            c2: c2.toString(),
+                            c3: c3.toString(),
+                            c4: c4.toString(),
+
+                          )));
                         },
                         style: ElevatedButton.styleFrom(
                             backgroundColor: Colors.white,
