@@ -59,7 +59,7 @@ class screan_salah extends StatelessWidget {
                   Text("النص الناتج من التشفير ",style: TextStyle(color: Colors.black,fontSize: 30,fontWeight: FontWeight.bold),),
                   CircleAvatar(
                     backgroundColor: Colors.white,
-                    radius: 35,
+                    radius: 40,
                     child: Icon(Icons.enhanced_encryption_rounded,size: 40,color: Colors.black,),
                   ),
                 ],
