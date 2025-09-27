@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 
 class master extends StatelessWidget {
-   master({Key? key, required this.salah, }) : super(key: key);
+   master({Key? key, required this.salah, required this.salah2, required this.salah3, }) : super(key: key);
   final String salah ;
+   final String salah2 ;
+   final String salah3;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -63,15 +65,56 @@ class master extends StatelessWidget {
             ),
             SizedBox(height: 10,),
             Container(
+
               width: double.infinity,
               height: 300,
              margin: EdgeInsets.all(10),
+
              decoration: BoxDecoration(
                color: Colors.white60,
                borderRadius: BorderRadius.circular(15),
 
              ),
-              child: Text("النص المشفر -$salah"),
+              child: Column(
+                children: [
+                  SizedBox(height: 30,),
+                  Container(
+                    padding: EdgeInsets.all(5),
+                    margin: EdgeInsets.all(6),
+                    width: double.infinity,
+                    height: 60,
+                    decoration:BoxDecoration(
+                      borderRadius: BorderRadius.circular(13),
+                      border: Border.all(color: Colors.white,width: 3),
+                    ) ,
+                    child:  Text("$salah3",style: TextStyle(color: Colors.black,fontSize: 20,fontWeight: FontWeight.bold),),
+                  ),
+                  SizedBox(height: 10,),
+                 Container(
+                   padding: EdgeInsets.all(5),
+                   margin: EdgeInsets.all(6),
+                   width: double.infinity,
+                   height: 60,
+                   decoration:BoxDecoration(
+                     borderRadius: BorderRadius.circular(13),
+                     border: Border.all(color: Colors.white,width: 3),
+                   ) ,
+                   child:  Text("$salah",style: TextStyle(color: Colors.black,fontSize: 20,fontWeight: FontWeight.bold),),
+                 ),
+                  SizedBox(height: 10,),
+                  Container(
+                    padding: EdgeInsets.all(5),
+                    margin: EdgeInsets.all(6),
+                    width: double.infinity,
+                    height: 60,
+                    decoration:BoxDecoration(
+                      borderRadius: BorderRadius.circular(13),
+                      border: Border.all(color: Colors.white,width: 3),
+                    ) ,
+                    child:  Text("$salah2",style: TextStyle(color: Colors.black,fontSize: 20,fontWeight: FontWeight.bold),),
+                  ),
+                ],
+              )
             )
           ],
         ),

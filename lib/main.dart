@@ -221,6 +221,8 @@ class salah extends StatelessWidget {
 class v extends StatelessWidget {
   v({Key? key}) : super(key: key);
   var frist_name=  TextEditingController();
+  var name2=  TextEditingController();
+  var name3=  TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -309,6 +311,7 @@ class v extends StatelessWidget {
             ),
 
             child: TextFormField(
+              controller: name2,
               decoration: InputDecoration(
                   suffixIcon: Icon(Icons.person,size: 40,color: Colors.blueGrey,),
                   prefixIcon: Icon(Icons.drive_file_rename_outline,size: 40,color: Colors.blueGrey,),
@@ -334,6 +337,7 @@ class v extends StatelessWidget {
 
             ),
             child: TextFormField(
+              controller: name3,
               keyboardType: TextInputType.phone,
               decoration: InputDecoration(
                   prefixIcon: Icon(Icons.phone,size: 40,color: Colors.blueGrey,),
@@ -366,7 +370,18 @@ class v extends StatelessWidget {
                 onPressed: (){
                   var a=utf8.encode(frist_name.text);
                   var salah=sha1.convert(a);
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=>master(salah: salah.toString())));
+
+                  var h=utf8.encode(name2.text);
+                  var salah2=sha1.convert(h);
+
+                  var m=utf8.encode(name3.text);
+                  var salah3=sha1.convert(m);
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>master(
+                      salah: salah.toString(),
+                      salah2: salah2.toString(),
+                    salah3: salah2.toString(),
+
+                  )));
 
 
 
