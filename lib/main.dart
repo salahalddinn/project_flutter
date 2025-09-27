@@ -364,14 +364,14 @@ class v extends StatelessWidget {
                 splashColor: Colors.blue,
 
                 onPressed: (){
-                  // Navigator.push(context, MaterialPageRoute(builder: (context)=>master()));
                   var a=utf8.encode(frist_name.text);
-                  var asd=sha1.convert(a);
+                  var salah=sha1.convert(a);
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>master(salah: salah.toString())));
 
 
 
 
-                  print (asd);
+                  // print (asd2);
                 },
 
                 child: Text("اضغط للتشفير ",style:TextStyle(color: Colors.black,fontSize: 30,fontWeight: FontWeight.bold),),)),

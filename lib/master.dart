@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:crypto/crypto.dart';
 import 'dart:convert';
 class master extends StatelessWidget {
-  const master({Key? key}) : super(key: key);
-
+   master({Key? key, required this.salah, }) : super(key: key);
+  final String salah ;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
