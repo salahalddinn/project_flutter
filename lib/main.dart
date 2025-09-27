@@ -363,8 +363,15 @@ class v extends StatelessWidget {
               child: MaterialButton(
                 splashColor: Colors.blue,
 
-                onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>master()));
+                onPressed: (){
+                  // Navigator.push(context, MaterialPageRoute(builder: (context)=>master()));
+                  var a=utf8.encode(frist_name.text);
+                  var asd=sha1.convert(a);
 
+
+
+
+                  print (asd);
                 },
 
                 child: Text("اضغط للتشفير ",style:TextStyle(color: Colors.black,fontSize: 30,fontWeight: FontWeight.bold),),)),
